@@ -17,7 +17,7 @@ const OverviewChart = () => {
   }
 
   return (
-    <div className="flex flex-col justify-start items-end relative w-1/3  h-full pt-4 pl-5 pr-4 pb-10 border-2 border-white rounded-lg ">
+    <div className="flex flex-col justify-start items-end relative w-1/3   pt-4 pl-5 pr-4 pb-10 border-2 border-white rounded-lg ">
       {/* MODAL */}
       <div
         ref={domNode}

@@ -5,12 +5,15 @@ import Icon from "@mui/material/Icon"
 import sideBarItems from "../../constants/sidebarItems"
 
 const Sidebar = ({ admin, user, agent }: Props) => {
-  const [active, setActive] = useState(false)
   const router = useRouter()
 
+  // CHANGE ARRAYS WIITH USE EFFECT OR USE STATE
+  // const [role, setRole] = useState(props.currentRole)
+  // IN RENDER - role === sidebarItemsArr ? arr.map() : ''
+
   return (
-    <div className="h-full max-w-[290px] w-full pr-5 pt-10 sticky left-0 top-8  border-r-2 border-white">
-      <ul className="flex flex-col gap-4 ">
+    <div className="hidden h-full w-full tabletlg:flex max-w-[220px] tablet:pr-2 desktop:max-w-[290px] pr-5 pt-10 static left-0 top-8  border-r-2 border-white">
+      <ul className="flex flex-col gap-4 tablet:w-full">
         {/* USER LAYOUT */}
         {user
           ? sideBarItems[0].map((item: any, index: number) => {

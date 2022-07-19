@@ -4,11 +4,11 @@
 
 @layer components {
   .sidebar-active {
-    @apply w-full h-12 pl-16 pr-5 flex justify-between items-center space-x-4  bg-gradient-to-b from-pink-br to-blue-br rounded-r-full hover:cursor-pointer;
+    @apply w-full tablet:pl-2  desktop:pl-16 h-12 pr-5 flex justify-between items-center space-x-4  bg-gradient-to-b from-pink-br to-blue-br rounded-r-full hover:cursor-pointer;
   }
 
   .sidebar-inactive {
-    @apply w-full h-12 pl-16 pr-5 flex justify-between items-center space-x-4 hover:cursor-pointer;
+    @apply w-full tablet:pl-2  desktop:pl-16 h-12 pr-5 flex justify-between items-center space-x-4 hover:cursor-pointer;
   }
   .notification-active {
     @apply w-5 h-5 rounded-full flex justify-center items-center bg-white text-pink-br text-xs font-semibold;

@@ -7,7 +7,7 @@ const Header = ({ admin }: Props) => {
   const [notification, setNotification] = useState(25)
 
   return (
-    <div className="w-screen h-20 flex justify-start xxl:justify-center pl-16 pr-16 border-b-2 border-white">
+    <div className="w-screen px-8 tablet:px-16 h-20 flex justify-start xxl:justify-center  border-b-2 border-white">
       <div className="w-full max-w-4 h-full space-x-4 flex justify-between  items-center ">
         {/* Left Part Header */}
         <div className="flex  justify-center items-center w-24 space-x-2">
@@ -59,7 +59,7 @@ const Header = ({ admin }: Props) => {
             <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full flex justify-center items-center bg-gradient-to-b from-pink-br to-blue-br text-white text-[10px] ">
               {notification}
             </div>
-            <NotificationsIcon className="text-dark-gray h-8 w-8"></NotificationsIcon>
+            <NotificationsIcon className="text-white h-7 w-7"></NotificationsIcon>
           </div>
         </div>
       </div>

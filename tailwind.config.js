@@ -7,8 +7,14 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
+      mobile: "400px",
+      // => @media (min-width: 400px) { ... }
+
       tablet: "640px",
       // => @media (min-width: 640px) { ... }
+
+      tabletlg: "875px",
+      // => @media (min-width: 875px) { ... }
 
       laptop: "1024px",
       // => @media (min-width: 1024px) { ... }
@@ -37,6 +43,9 @@ module.exports = {
         // Complex site-specific column configuration
         'conversion': "repeat(3, minmax(0, 220px))",
       },
+      backgroundImage: {
+        'wallet-pattern': "url('/images/bg-wallet.svg')",
+      }
     },
   },
   plugins: [],

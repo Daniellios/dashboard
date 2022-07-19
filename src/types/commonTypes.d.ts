@@ -1,9 +1,11 @@
 type Props = {
   children?: ReactNode
   title?: string
+  pageName?: string
   admin?: boolean
   user?: boolean
   agent?: boolean
+  calendar?: boolean
 }
 
 interface ISidebarLink {
@@ -11,4 +13,8 @@ interface ISidebarLink {
   title: string
   icon?: any
   notifications?: boolean
+}
+
+interface IContact {
+  isSelf?: boolean
 }

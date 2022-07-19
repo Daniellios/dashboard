@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
 
 const Conversions = () => {
   return (
-    <div className="w-full  flex flex-col gap-8 px-10 py-10 border-2 border-white rounded-lg">
+    <div className="w-full flex flex-col gap-8 px-10 py-10 border-2 border-white rounded-lg">
       {/* TABLE HEADER */}
       <div className="w-full flex justify-between items-center">
         <h3 className="font-semibold"> Conversion Rates </h3>

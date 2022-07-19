@@ -7,7 +7,9 @@ import { Head } from "../components/Head/Head"
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <main className="h-screen overflow-hidden bg-main-bg">{children}</main>
+      <main className="h-screen overflow-y-visible overflow-x-hidden bg-main-bg">
+        {children}
+      </main>
     </>
   )
 }
