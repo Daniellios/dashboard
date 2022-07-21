@@ -1,13 +1,20 @@
 import Image from "next/image"
 import React, { useState } from "react"
 
-const Contact = ({ isSelf }: IContact) => {
+const Contact = ({ isSelf, openSideMenu, isHeader }: IContact) => {
   const [isOnline, setIsOnline] = useState(true)
   const [msgQty, setMsgQty] = useState(20)
   const [isTyping, setIsTyping] = useState(false)
 
+  const handleSideBar = () => {
+    openSideMenu(false)
+  }
+
   return (
-    <div className="w-full flex flex-col px-2 items-start tablet:flex-row tablet:items-center justify-start gap-4 tablet:px-4 ">
+    <div
+      onClick={isSelf || isHeader ? undefined : handleSideBar}
+      className="w-full flex px-2 items-center tablet:flex-row tablet:items-center justify-start gap-4 tablet:pr-4 "
+    >
       {/* PROFILE PIC */}
       <div className=" relative w-9 h-9 ">
         <Image
@@ -40,9 +47,12 @@ const Contact = ({ isSelf }: IContact) => {
       <div className="w-full tablet:flex justify-between items-end gap-2">
         {/* LEFT BOX */}
         <div className="flex flex-col tablet:items-start justify-center gap-1">
-          <h4 className="text-xs text-left">Daniel Blinnikov</h4>
-          <p className="hidden tablet:block text-[10px] font-thin capitalize">
-            {isOnline ? "online" : "offline"}
+          <h4 className="text-left text-xs tablet:text-left">
+            Daniel Blinnikov
+          </h4>
+          <p className="text-[10px] font-thin capitalize">
+            Agent
+            {/* {isOnline ? "online" : "offline"} */}
           </p>
         </div>
         {/* RIGHT BOX */}

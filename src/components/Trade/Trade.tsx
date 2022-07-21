@@ -4,7 +4,7 @@ import Contacts from "./Contacts"
 
 const Trade = () => {
   return (
-    <div className="flex h-full border-2 border-white rounded-lg">
+    <div className="flex flex-col overflow-x-auto overflow-y-hidden relative tablet:flex-row max-h-[686px] border-2 border-white rounded-lg min-w-[375px]">
       <Contacts></Contacts>
       <Chat></Chat>
     </div>

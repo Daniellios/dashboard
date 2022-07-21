@@ -41,12 +41,13 @@ module.exports = {
       },
       gridTemplateColumns: {
         // Complex site-specific column configuration
-        'conversion': "repeat(3, minmax(0, 220px))",
+        conversion: "repeat(3, minmax(0, 220px))",
       },
       backgroundImage: {
-        'wallet-pattern': "url('/images/bg-wallet.svg')",
-      }
+        "wallet-pattern": "url('/images/bg-wallet.svg')",
+      },
+
     },
+
   },
-  plugins: [],
 }

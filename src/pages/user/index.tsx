@@ -8,7 +8,6 @@ import type { NextPageWithLayout } from "../_app"
 import { Head } from "../../components/Head/Head"
 import ContentHeader from "../../components/ContentHeader/ContentHeader"
 import Wallet from "../../components/Wallet/Wallet"
-import Trade from "../../components/Trade/Trade"
 
 const Page: NextPageWithLayout = () => {
   return (
@@ -20,7 +19,6 @@ const Page: NextPageWithLayout = () => {
         calendar
       ></ContentHeader>
       <Overview />
-      <Trade />
       <Wallet />
     </>
   )

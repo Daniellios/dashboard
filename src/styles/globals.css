@@ -17,4 +17,35 @@
   .notification-inactive {
     @apply w-5 h-5 rounded-full flex justify-center items-center bg-gradient-to-b from-pink-br to-blue-br text-white text-xs font-semibold;
   }
-} ;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    color: rgba(146, 146, 146, 0.5);
+    background: rgba(146, 146, 146, 0.5);
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: "#c0a0b9";
+  }
+
+  .contacts-open {
+    @apply absolute transition-[translate] ease-linear duration-300 bg-black z-10 top-0 left-0 flex flex-col h-full w-full justify-between gap-4 rounded-lg translate-x-0 tablet:bg-transparent tablet:static;
+  }
+
+  .contacts-closed {
+    @apply absolute -translate-x-full h-full transition-[translate] z-10 ease-linear duration-300 tablet:translate-x-0 tablet:static;
+  }
+}

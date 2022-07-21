@@ -17,4 +17,10 @@ interface ISidebarLink {
 
 interface IContact {
   isSelf?: boolean
+  openSideMenu?: any
+  isHeader?: any
+}
+
+interface IMessage {
+  isMine?: boolean
 }
